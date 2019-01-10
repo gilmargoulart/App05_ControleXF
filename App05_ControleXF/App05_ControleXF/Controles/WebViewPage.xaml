@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App05_ControleXF.Controles.WebViewPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="txtEnderecoSite" Text="https://nuvem.guru/" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Ir" Clicked="Button_IrPagina"/>
+                <Button Text="Próxima" Clicked="Button_ProximaPagina"/>
+                <Button Text="Voltar" Clicked="Button_VoltarPagina"/>
+            </StackLayout>
+            <WebView Source=""
+                     Navigating="WebView_Navigating"
+                     Navigated="WebView_Navigated"
+                     
+                     x:Name="webView"
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand">
+                
+            </WebView>
+            <Label x:Name="lblStatus" Text="Status"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App05_ControleXF.Controles.EntryEditorPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <!-- Entry é pra informações menores -->
+            <Entry x:Name="txtIdade"
+                Text=""
+                TextColor="Red"
+                Placeholder="Idade:"
+                PlaceholderColor="Blue"
+                IsPassword="False"
+                
+                Keyboard="Numeric"
+                   
+                BackgroundColor="LightGray"
+                />
+            
+            <Label x:Name="lblDuplicar" />
+
+            <!-- Editor é um campo de entrada maior, como por exmeplo textos.-->
+            <Editor x:Name="txtComentario" HeightRequest="200"/>
+            <Label x:Name="lblQtdChars" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
